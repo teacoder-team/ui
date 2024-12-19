@@ -2,7 +2,6 @@ import { Slot } from '@radix-ui/react-slot'
 import { RiLoader2Fill } from '@remixicon/react'
 import { type VariantProps, cva } from 'class-variance-authority'
 import { type ComponentPropsWithoutRef, forwardRef } from 'react'
-import '../styles/variables.css'
 import { cn } from '../utils/tw-merge'
 
 const buttonVariants = cva(

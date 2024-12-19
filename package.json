@@ -4,9 +4,13 @@
 	"description": "TeaCoder UI component library",
 	"type": "module",
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"repository": "https://github.com/teacoder-team/ui",
 	"author": "TeaCoder <admin@teacoder.ru>",
 	"license": "AGPL-3.0-or-later",
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"build": "npm run build:clean && npm run build:esm && npm run build:bundle && npm run build:types",
 		"build:clean": "rimraf dist esm",
@@ -25,10 +29,7 @@
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"tailwind-merge": "^2.5.5",
-		"tailwind-variants": "^0.3.0",
-		"vite": "^5.4.11",
-		"vite-tsconfig-paths": "^5.1.4",
-		"vitest": "^2.1.8"
+		"tailwind-variants": "^0.3.0"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.26.4",
