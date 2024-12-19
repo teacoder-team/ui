@@ -3,13 +3,15 @@
 	"version": "0.0.1",
 	"description": "TeaCoder UI component library",
 	"type": "module",
+	"main": "dist/index.js",
 	"repository": "https://github.com/teacoder-team/ui",
 	"author": "TeaCoder <admin@teacoder.ru>",
 	"license": "AGPL-3.0-or-later",
 	"scripts": {
-		"build": "npm run build:clean && npm run build:esm && npm run build:bundle",
+		"build": "npm run build:clean && npm run build:esm && npm run build:bundle && npm run build:types",
 		"build:clean": "rimraf dist esm",
 		"build:esm": "babel src --no-babelrc --out-dir esm --extensions \".ts,.tsx\" --config-file ./.babelrc.es && tsc",
+		"build:types": "tsc",
 		"watch:esm": "tsc-watch",
 		"build:bundle": "babel src --out-dir lib --extensions \".ts,.tsx\"",
 		"watch:bundle": "npm run build:bundle --watch"
