@@ -1,6 +1,6 @@
 {
 	"name": "@teacoder/ui",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "TeaCoder UI component library",
 	"type": "module",
 	"main": "dist/index.js",
