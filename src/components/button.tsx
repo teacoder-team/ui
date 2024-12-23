@@ -1,6 +1,6 @@
 import { Slot } from '@radix-ui/react-slot'
-import { RiLoader2Fill } from '@remixicon/react'
 import { type VariantProps, cva } from 'class-variance-authority'
+import { Loader } from 'lucide-react'
 import { type ComponentPropsWithoutRef, forwardRef } from 'react'
 import { cn } from '../utils/tw-merge'
 
@@ -68,7 +68,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 			>
 				{isLoading ? (
 					<span className='pointer-events-none flex shrink-0 items-center justify-center gap-1.5'>
-						<RiLoader2Fill
+						<Loader
 							className='size-4 shrink-0 animate-spin'
 							aria-hidden='true'
 						/>
